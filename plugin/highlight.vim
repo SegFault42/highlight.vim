@@ -45,7 +45,6 @@
 "   script work in Console mode (Ver 1.6)
 "
 
-
 if exists("loaded_highlight") 
    finish
 endif
@@ -56,11 +55,11 @@ syntax on
 " -- Normal mode mappings --
 
 " Highlight current line 
-noremap  <silent> <C-h><C-h> :call <SID>Highlight("h") \| nohls<CR>
+noremap  <silent> <C-c><C-c> :call <SID>Highlight("h") \| nohls<CR>
 " Advance color for next line highlight
-noremap  <silent> <C-h><C-a> :call <SID>Highlight("a")<CR>
+noremap  <silent> <C-c><C-a> :call <SID>Highlight("a")<CR>
 " Clear last line highlight
-noremap  <silent> <C-h><C-r> :call <SID>Highlight("r")<CR>
+noremap  <silent> <C-c><C-r> :call <SID>Highlight("r")<CR>
 
 " Highlight word under cursor (whole word match)
 noremap  <silent> <C-h><C-w> :call <SID>Highlight("w") \| nohls<CR>
@@ -78,17 +77,17 @@ noremap  <silent> <C-h><C-j> :call <SID>Highlight("j") \| nohls<CR>
 noremap  <silent> <C-h><C-d> :call <SID>Highlight("d")<CR>
 
 " Clear all highlights
-noremap  <silent> <C-h><C-n> :call <SID>Highlight("n")<CR>
+noremap  <silent> <C-c><C-n> :call <SID>Highlight("n")<CR>
 
 
 " -- Insert mode mappings --
 
 " Highlight current line 
-inoremap <silent> <C-h><C-h> <C-o>:call <SID>Highlight("h")<CR>
+inoremap <silent> <C-c><C-c> <C-o>:call <SID>Highlight("h")<CR>
 " Advance color for next line highlight
-inoremap <silent> <C-h><C-a> <C-o>:call <SID>Highlight("a")<CR>
+inoremap <silent> <C-c><C-a> <C-o>:call <SID>Highlight("a")<CR>
 " Clear last line highlight
-inoremap <silent> <C-h><C-r> <C-o>:call <SID>Highlight("r")<CR>
+inoremap <silent> <C-c><C-r> <C-o>:call <SID>Highlight("r")<CR>
 
 " Highlight word under cursor (whole word match)
 inoremap <silent> <C-h><C-w> <C-o>:call <SID>Highlight("w") \| nohls<CR>
@@ -106,8 +105,7 @@ inoremap <silent> <C-h><C-j> <C-o>:call <SID>Highlight("j") \| nohls<CR>
 inoremap <silent> <C-h><C-d> <C-o>:call <SID>Highlight("d")<CR>
 
 " Clear all highlights
-inoremap <silent> <C-h><C-n> <C-o>:call <SID>Highlight("n")<CR>
-
+inoremap <silent> <C-c><C-n> <C-o>:call <SID>Highlight("n")<CR>
 
 " Define colors for Line highlight
 if !exists('g:lcolor_bg')
