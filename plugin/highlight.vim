@@ -5,9 +5,9 @@
 " Description: Highlight lines or patterns of interest in different colors
 " Uasge:
 "   Line mode
-"     <C-h><C-h>   Highlight current line 
-"     <C-h><C-a>   Advance color for next line highlight
-"     <C-h><C-r>   Clear last line highlight
+"     <C-c><C-c>   Highlight current line 
+"     <C-c><C-a>   Advance color for next line highlight
+"     <C-c><C-r>   Clear last line highlight
 "
 "   Pattern mode
 "     <C-h><C-w>   Highlight word under cursor (whole word match)
